@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Martel+Sans:wght@600&family=Poppins:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/img/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    margin:  auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    z-index: 10;
+    position: relative;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+
+.hero> :first-child {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(41, 38, 38);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 4px 8px;
+    font-weight: bold;
+    background-color: rgba(246, 238, 238, 0.086);
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+ .first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+
+ .secimg {
+    position: relative;
+ }
+
+ .secimg img {
+    width: 469px;
+    position: relative;
+    z-index: 10;
+ }
+
+ .secimg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+ }
+
+ video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: 32vh;
+ }
+
+ section.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+ }
+
+ .first > div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+ }
+
+ .first > div :nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
+ }
+
+ .faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+ }
+
+ .faqbox:hover{
+    background-color: red;
+ }
+
+ .faqbox {
+    transition: all 1s ease-in-out;  
+    font-size: 24px;
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+ }
+ .faq h2 {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+ }
+
+ .faqbox svg {
+    filter: invert(1);
+ }
+
+ footer {
+    color: white;
+    margin: auto;
+    max-width: 60vw;
+ }
+ footer span {
+    padding: 34px 0;
+ }
+
+ .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+ }
+
+ .footer-items {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .footer a {
+    text-decoration: none;
+    color: white;
+    padding: 34px;
+ }
